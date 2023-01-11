@@ -5,6 +5,9 @@
 <table>
   <tr>
     <td>
+      <a href="/index">Home</a>
+    </td>
+    <td>
       <a href="/week1labreport">Week 1 Lab Report</a>
     </td>
     <td>
