@@ -6,6 +6,8 @@
   <tr>
     <td>
       <a href="/week1labreport">Week 1 Lab Report</a>
+    </td>
+    <td>
       <a href="/about">About</a>
     </td>
   </tr>
