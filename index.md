@@ -5,13 +5,13 @@
 <table>
   <tr>
     <td>
-      <a href="./index">Home</a>
+      <a href="./index.md">Home</a>
     </td>
     <td>
-      <a href="./week1labreport">Week 1 Lab Report</a>
+      <a href="./week1labreport.md">Week 1 Lab Report</a>
     </td>
     <td>
-      <a href="./about">About</a>
+      <a href="./about.md">About</a>
     </td>
   </tr>
 </table>
