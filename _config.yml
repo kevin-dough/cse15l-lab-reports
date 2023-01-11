@@ -1,6 +1,0 @@
-include:
-  - about.md
-  - week1labreport.md
-relative_links:
-  enabled: true
-  collections: true
