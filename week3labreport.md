@@ -109,6 +109,10 @@ static double averageWithoutLowest(double[] arr) {
 
 ![image](https://user-images.githubusercontent.com/54718041/215363299-4ea3166f-9933-4387-87f7-b2f43356fdf0.png)
 
+The first input ouputs the correct value `0.0`. Since `5.0` is the lowest and only item in the array, if you add up everything except that number, the sum and average should be 0.
+
+The second input should output `1.0` since the lowest is removed. `1.0` is the lowest so the average should be of 3 `1.0`'s. Although, the program may be written to remove all of the lowest on purpose but in this case the purpose will be to remove only one.
+
 
 #### Fixing the Code
 Before: see `Code Snippet` above.
@@ -122,10 +126,10 @@ static double averageWithoutLowest(double[] arr) {
       if(num < lowest) { lowest = num; }
     }
     double sum = 0;
-    for(double num: arr) {
+    for(double num: arr) { // the code will add up all the numbers
       sum += num;
     }
-    sum -= lowest;
+    sum -= lowest; // then it will subtract the lowest value
     return sum / (arr.length - 1);
   }
 ```
