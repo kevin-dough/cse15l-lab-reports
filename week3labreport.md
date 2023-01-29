@@ -1,6 +1,7 @@
 ## Week 3 Lab Report
 > By Kevin Do
 
+## Part 1
 
 ### `StringServer.java`
 ```java
@@ -51,16 +52,78 @@ class StringServer {
     }
 }
 ```
+
+### Image 1
+
 ![image](https://user-images.githubusercontent.com/54718041/215361255-36897b84-aa2c-4098-9134-8d2eeb772f9e.png)
 
 ![image](https://user-images.githubusercontent.com/54718041/215361266-528baa70-5725-463d-8a19-c5ce8a4e4d0b.png)
+
+The first method that is called is the `handleRequest` method, which takes the URI as a parameter. Since the path does not equal "`/`", the method will then check if the path contains "`/add-message`", which it does. It will then split the query string around "`=`" which will separate "`s`" and the string that will be inputted. Such string is then added to my ArrayList. To output the ArrayList, I created a method called `lineBreaker` that adds a linebreak in between each string in the ArrayList.
+
+### Image 2
 
 ![image](https://user-images.githubusercontent.com/54718041/215361308-53085aa7-7254-4d2b-861a-4e7b81c67f04.png)
 
 ![image](https://user-images.githubusercontent.com/54718041/215361311-baa2eafe-06d1-4d1a-9709-b70e15a8867e.png)
 
+When another message is added to the list of Strings, the same process happens with the `handleRequest` method. The URI will be different since there is a different query. The path and querys are checked again except this time `params[1]` will be "`HEHEHEHA`". Since this is the second string that is being added to the ArrayList, it will be after the first string: `Hello! Welcome to McDonalds, may I take your order?`. This means that when the string is output it is different from after the first input.
 
+## Part 2
 
+#### Code Snippet
+```java
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
 
+#### Failure Inducing Input
+```java
+@Test
+  public void failInput() {
+    double[] list = {1.0, 1.0, 1.0, 1.0};
+    assertEquals(1.0, ArrayExamples.averageWithoutLowest(list), 0);
+  }
+```
 
-IMAGE 2------------
+#### Non-Failure Inducing Input
+```java
+@Test
+  public void nonfailInput() {
+    double[] input = {5.0};
+    assertEquals(0.0, ArrayExamples.averageWithoutLowest(input), 0);
+  }
+```
+
+#### Screenshot of Both Inputs JUnit test results
+
+#### Fixing the Code
+Before: see `Code Snippet` above.
+
+After:
+```java
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      sum += num;
+    }
+    sum -= lowest;
+    return sum / (arr.length - 1);
+  }
+```
+This code makes sure that only one instance of the lowest in the array is removed instead of all.
