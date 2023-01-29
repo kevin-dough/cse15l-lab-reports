@@ -107,6 +107,9 @@ static double averageWithoutLowest(double[] arr) {
 
 #### Screenshot of Both Inputs JUnit test results
 
+![image](https://user-images.githubusercontent.com/54718041/215363299-4ea3166f-9933-4387-87f7-b2f43356fdf0.png)
+
+
 #### Fixing the Code
 Before: see `Code Snippet` above.
 
