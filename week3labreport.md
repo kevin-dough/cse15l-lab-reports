@@ -51,7 +51,14 @@ class StringServer {
     }
 }
 ```
-IMAGE 1------------
+![image](https://user-images.githubusercontent.com/54718041/215361255-36897b84-aa2c-4098-9134-8d2eeb772f9e.png)
+
+![image](https://user-images.githubusercontent.com/54718041/215361266-528baa70-5725-463d-8a19-c5ce8a4e4d0b.png)
+
+![image](https://user-images.githubusercontent.com/54718041/215361308-53085aa7-7254-4d2b-861a-4e7b81c67f04.png)
+
+![image](https://user-images.githubusercontent.com/54718041/215361311-baa2eafe-06d1-4d1a-9709-b70e15a8867e.png)
+
 
 
 
