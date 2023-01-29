@@ -1,7 +1,8 @@
 ## Week 3 Lab Report
 > By Kevin Do
 
-StringServer.java
+
+### `StringServer.java`
 ```java
 import java.io.IOException;
 import java.net.URI;
@@ -50,3 +51,9 @@ class StringServer {
     }
 }
 ```
+IMAGE 1------------
+
+
+
+
+IMAGE 2------------
