@@ -134,3 +134,8 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 This code makes sure that only one instance of the lowest in the array is removed instead of all.
+
+
+## Part 3
+
+In weeks 2 and 3, something new that I learned was how to make a simple local web server with Java and host it remotely. I expanded my knowledge with using JUnit tests, which I have also started to learn about in CSE 12. 
