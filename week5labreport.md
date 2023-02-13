@@ -5,11 +5,17 @@
 
 The `less` command shows a file's contents page by page.
 
-`less [options] filepath`
+```bash
+less [options] filepath
+```
 
 ### Showing Line Numbers
 
 To show line numbers when viewing file contents, use the option `-N` when executing the command. Showing line numbers is useful for locating a specific line in code reviews, etc.
+
+```bash
+less -N filepath
+```
 
 ![image](https://user-images.githubusercontent.com/54718041/218557507-cbfa4c25-b748-45a9-84fa-0bdce5c282cd.png)
 ![image](https://user-images.githubusercontent.com/54718041/218558069-ef07d12d-cb86-459b-ae34-b1bbf613148f.png)
@@ -28,6 +34,14 @@ citation: [`https://phoenixnap.com/kb/less-command-in-linux`](https://phoenixnap
 
 Once you have opened the file with `less`, use a `/` and type the string to execute a forward search. To do a backward search use a `?`. After searching, you can navigate to the next or previous search in the file by using `n` to go forward and `N` to go backward. This command is useful for finding a certain section of a text file or your code. It makes navigating easier.
 
+```bash
+/text-to-search
+```
+
+```bash
+?text-to-search
+```
+
 ![image](https://user-images.githubusercontent.com/54718041/218558618-55243e8e-6b92-4e75-acce-e4b44c9d8ed2.png)
 
 ![image](https://user-images.githubusercontent.com/54718041/218558635-54a1c6e1-5927-4476-a79e-5a7f50adf2a5.png)
@@ -44,6 +58,10 @@ citation: [`https://phoenixnap.com/kb/less-command-in-linux`](https://phoenixnap
 
 Use the option `-p` to open the file on the page that contains the pattern listed after the `-p`. For example, `-pTEST` will open the file to the page that contains the string `TEST`. This would be faster than opening a file and then searching for a specific key phrase.
 
+```bash
+less -pPATTERN filename
+```
+
 ![image](https://user-images.githubusercontent.com/54718041/218580246-145dd66e-ee74-4c89-b7ef-c90a8052798e.png)
 
 ![image](https://user-images.githubusercontent.com/54718041/218580231-54d0c157-051c-43ff-ae83-277ccf49398f.png)
@@ -59,6 +77,10 @@ citation: [`https://phoenixnap.com/kb/less-command-in-linux`](https://phoenixnap
 ### Keeping file contents in terminal after exiting
 
 By default, the contents of the file will dissapear after exiting the viewer. To keep the contents in the terminal, use the option `-X`. This is useful because the contents of the file could be used for other commands that you may want to execute afterwards. You may want to reference the text in the file and it would be helpful to see it in the history.
+
+```bash
+less -X filename
+```
 
 ![image](https://user-images.githubusercontent.com/54718041/218581509-1d1b4324-deaa-4d43-bd06-3ecaf6356286.png)
 
