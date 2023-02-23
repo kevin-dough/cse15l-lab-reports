@@ -14,6 +14,12 @@
       <a href="./week3labreport">Week 3 Lab Report</a>
     </td>
     <td>
+      <a href="./week5labreport">Week 5 Lab Report</a>
+    </td>
+    <td>
+      <a href="./week7labreport">Week 7 Lab Report</a>
+    </td>
+    <td>
       <a href="./about">About</a>
     </td>
   </tr>
