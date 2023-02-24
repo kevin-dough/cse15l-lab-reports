@@ -99,3 +99,5 @@ git commit -m "Updated"
 git push
 ```
 > stages the changes in `ListExamples.java`, commits them with the message "`Updated`" and pushes them to the repository
+
+![image](https://user-images.githubusercontent.com/54718041/221059776-16226181-3689-4407-8ac8-ef00a03b489c.png)
