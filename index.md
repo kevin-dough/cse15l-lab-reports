@@ -20,6 +20,9 @@
       <a href="./week7labreport">Week 7 Lab Report</a>
     </td>
     <td>
+      <a href="./week9labreport">Week 9 Lab Report</a>
+    </td>
+    <td>
       <a href="./about">About</a>
     </td>
   </tr>
